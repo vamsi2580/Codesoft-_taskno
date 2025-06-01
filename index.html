@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Excellent Portfolio (Pure CSS)</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="#home" class="logo">Your Name</a>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="container">
+            <h1>Hello, I'm Your Name!</h1>
+            <p>A passionate Web Developer creating beautiful and functional web experiences.</p>
+            <button onclick="scrollToSection('projects')">
+                View My Work
+            </button>
+        </section>
+
+        <section id="about" class="container">
+            <h2>About Me</h2>
+            <div class="content-wrapper">
+                <div class="image-wrapper">
+                    <img src="https://placehold.co/300x300/6366F1/FFFFFF?text=Your+Photo" alt="Your Photo">
+                </div>
+                <div class="text-content">
+                    <p>
+                        Hi there! I'm a dedicated web developer with a strong passion for building intuitive and dynamic web applications. My journey in web development began with a fascination for how digital interfaces come to life, and it has since evolved into a commitment to crafting clean, efficient, and user-friendly code.
+                    </p>
+                    <p>
+                        I specialize in front-end development, with a solid understanding of HTML, CSS, and JavaScript. I enjoy transforming complex ideas into tangible web solutions and am always eager to learn new technologies and best practices.
+                    </p>
+                    <p>
+                        Beyond coding, I love solving puzzles, exploring new design trends, and contributing to open-source projects. I believe in continuous learning and collaboration to achieve the best results.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Front-End Development</h3>
+                    <ul>
+                        <li>HTML5, CSS3, JavaScript (ES6+)</li>
+                        <li>React.js, Vue.js (Basics)</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Back-End Development</h3>
+                    <ul>
+                        <li>Node.js, Express.js (Basics)</li>
+                        <li>Python (Flask/Django - Basics)</li>
+                        <li>RESTful APIs</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools & Technologies</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>VS Code</li>
+                        <li>npm/yarn</li>
+                        <li>Figma (Basics)</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Databases</h3>
+                    <ul>
+                        <li>MongoDB (Basics)</li>
+                        <li>SQL (Basics)</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Problem Solving</li>
+                        <li>Team Collaboration</li>
+                        <li>Communication</li>
+                        <li>Adaptability</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Design Principles</h3>
+                    <ul>
+                        <li>UI/UX Basics</li>
+                        <li>Accessibility</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://placehold.co/600x400/A78BFA/FFFFFF?text=Project+1" alt="Project 1">
+                    <div class="card-content">
+                        <h3>E-commerce Website</h3>
+                        <p class="project-description">
+                            A fully responsive e-commerce platform built with React.js and Node.js. Features user authentication, product catalog, shopping cart, and checkout process.
+                            <span class="hidden-text">
+                                This project demonstrates my ability to integrate front-end and back-end technologies to create a complete web application. It includes features like dynamic routing, state management with React Context, and secure API communication.
+                            </span>
+                        </p>
+                        <button onclick="toggleDescription(this)" class="toggle-button">Read More</button>
+                        <div class="tags">
+                            <span class="tag">React.js</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://placehold.co/600x400/818CF8/FFFFFF?text=Project+2" alt="Project 2">
+                    <div class="card-content">
+                        <h3>Task Management App</h3>
+                        <p class="project-description">
+                            A simple and intuitive task management application developed using vanilla JavaScript, HTML, and CSS. Allows users to add, delete, and mark tasks as complete.
+                            <span class="hidden-text">
+                                This project focuses on clean code structure and efficient DOM manipulation. It includes local storage integration to persist tasks even after the browser is closed, providing a seamless user experience.
+                            </span>
+                        </p>
+                        <button onclick="toggleDescription(this)" class="toggle-button">Read More</button>
+                        <div class="tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://placehold.co/600x400/6366F1/FFFFFF?text=Project+3" alt="Project 3">
+                    <div class="card-content">
+                        <h3>Portfolio Website V1</h3>
+                        <p class="project-description">
+                            The first iteration of my personal portfolio website, designed with a focus on clean aesthetics and responsive layout using Bootstrap.
+                            <span class="hidden-text">
+                                This project helped me solidify my understanding of responsive design principles and CSS frameworks. It features a modern, minimalist design and showcases my early web development projects.
+                            </span>
+                        </p>
+                        <button onclick="toggleDescription(this)" class="toggle-button">Read More</button>
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="container">
+            <h2>My Resume</h2>
+            <p>
+                Download my full resume to learn more about my professional background and experience.
+            </p>
+            <a href="https://example.com/your-resume.pdf" download="Your_Name_Resume.pdf" class="download-button">
+                Download Resume (PDF)
+            </a>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-info">
+                <p>
+                    I'm always open to new opportunities and collaborations. Feel free to reach out!
+                </p>
+                <div class="contact-details">
+                    <p>
+                        <strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a>
+                    </p>
+                    <p>
+                        <strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a>
+                    </p>
+                    <p>
+                        <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a>
+                    </p>
+                    <p>
+                        <strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <div>
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
