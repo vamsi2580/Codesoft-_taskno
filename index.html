@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <!-- <img class="logo" src="logo.jpg" alt=""> -->
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" class="action-btn" id="desktop-signup">Sign Up</a></li>
+                </ul>
+            </nav>
+             <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-text">
+                    <h1>Welcome to Our Awesome Website</h1>
+                    <p>Discover amazing things and explore our services. We are dedicated to providing the best solutions for your needs.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="hero-image-placeholder">
+                    <img src="opg1.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-light services">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="icon-placeholder">S1</div>
+                        <h3>Service One</h3>
+                        <p>High-quality service tailored to your unique requirements and goals. We ensure satisfaction.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon-placeholder">S2</div>
+                        <h3>Service Two</h3>
+                        <p>Innovative solutions that drive growth and efficiency for your business. Stay ahead of the curve.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon-placeholder">S3</div>
+                        <h3>Service Three</h3>
+                        <p>Expert support and consultation to help you navigate challenges and achieve success.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-dark feature-section">
+            <div class="container">
+                <div class="feature-image-placeholder">
+                    <img src="opg2.jpg" alt="">
+                </div>
+                <div class="feature-text">
+                    <h2>Why Choose Us?</h2>
+                    <p>We combine expertise with a client-centric approach. Our commitment is to deliver outstanding results and build long-term partnerships.</p>
+                    <p>With years of experience and a passion for excellence, we stand out in the industry. Explore the difference.</p>
+                    <a href="#" class="btn btn-secondary">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <h2>Ready to Get Started?</h2>
+                <p>Join thousands of satisfied clients. Let's build something great together. Contact us today!</p>
+                <a href="#" class="btn">Get Started Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 YourBrand. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="#" title="Facebook">FB</a>
+                <a href="#" title="Twitter">TW</a>
+                <a href="#" title="Instagram">IG</a>
+                <a href="#" title="LinkedIn">LI</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
